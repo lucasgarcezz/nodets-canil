@@ -161,8 +161,8 @@ export const pet = { //objeto para criar as funções
             }
         });
     },
-    getFromTypeSex: (sex: SexType): Pet[] => { //filtrando pet pelo nome e retornando um array de pet
-        return data.filter(item => { //se meu itemtype = type:PetType ele vai ficar true e me gerar um array
+    getFromTypeSex: (sex: SexType): Pet[] => { 
+        return data.filter(item => { 
             if (item.sex === sex) {
                 return true;
             } else {
