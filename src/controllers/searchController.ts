@@ -7,6 +7,11 @@ export const search = (req: Request, res:Response) => {
 
     let list = pet.getFromName(query);
 
+    if(!query){
+        res.redirect('/');
+        return
+    }
+
 
     res.render('pages/page', {
         menu: createMenuObject(''),
