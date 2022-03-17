@@ -7,7 +7,8 @@
 
 
 <div class="container list">
-{{#list}}
+{{#list}}<!-- Utilizando e manipulando os elemntso que estão em pet -->
+
       <div class="item">
         <img src="images/{{image}}" class="item--image" />
         <div class="item--name">{{name}}</div>
@@ -17,6 +18,11 @@
  
 {{/list}}
 </div>    
+{{^list}}
+ <div class="container no-list">
+ <h2>Não há animais disponiveis nestas condições. </h2>
+ </div>
+{{/list}} <!--  fazendo a verificação para quando o list nao exist, no caso para quando não existir o nome do animal digitado -->
 
 
 {{>partials/footer}}
