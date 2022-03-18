@@ -7,7 +7,7 @@ Projeto NODE + TS
 ### Instalação
 `npm install`
 #### Para rodar o projeto
-`npm run start`
+`npm run start-dev`
 #### Após configurar o heroku, depois do push no git executar o comando:
 `git push heroku main`
 
